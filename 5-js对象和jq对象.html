@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li id="cloth">衣服</li>
+			<li>裤子</li>
+			<li>裙子</li>
+			<li>袜子</li>
+		</ul>
+		
+		<script src="jquery-1.12.4.js"></script>
+		<script>
+			$(function(){
+//				var $li = $("li");
+//				console.log($li);
+				
+				var cloth = document.getElementById("cloth");
+				
+				$(cloth).text("hehe");
+				
+				var $li = $("li");
+				$li[1].style.background = 'green';
+				$li.get(2).style.background = 'yellow';
+			});
+		</script>
+	</body>
+</html>
